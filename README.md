@@ -9,7 +9,7 @@
 ## 二、使用
 
 ```typescript
-import { IdCardUtils } from 'ddidcardutils/lib'
+import { IdCardUtils } from 'ddidcardutils'
 const idCardUtils = new IdCardUtils()
 ```
 
@@ -28,7 +28,7 @@ idCard.isValidateCard('53032319900525051') // true 不合法
 
 #### 2. `getOriginObject`
 
-获取籍贯省市县三级结构，其中code为标准的行政区域代码，省级2位，市级4位，县级6位
+获取籍贯省市县三级结构，其中 code 为标准的行政区域代码，省级 2 位，市级 4 位，县级 6 位
 
 如`530323`
 
@@ -65,7 +65,7 @@ idCard.getOriginName('530323199005250516')
 
 #### 4. `getBirth`
 
-获取生日，返回值是YYYYMMDD格式的字符串
+获取生日，返回值是 YYYYMMDD 格式的字符串
 
 ```typescript
 idCard.getBirth('530323199005250516')
@@ -118,4 +118,3 @@ idCard.getSex('530323199005250516')
 idCard.getSex('530323199005250526')
 // 女
 ```
-
