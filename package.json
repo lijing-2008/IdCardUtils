@@ -2,7 +2,12 @@
   "name": "ddidcardutils",
   "version": "1.6.0",
   "description": "utils for IdCard",
-  "main": "index.ts",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc -p tsconfig.json"
